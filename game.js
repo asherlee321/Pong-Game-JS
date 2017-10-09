@@ -63,14 +63,14 @@ function reset(){
 
 			if(this.y < playerOne.y + 100 && this.y > playerOne.y && this.x > 0 ){
 				if(this.x < playerOne.x + this.w && this.y < playerOne.y + 50){
-					this.speedX = 5;
-					this.speedY = -5;
+					this.speedX = -this.speedX;
+					this.speedY = -this.speedY;
 					touchedOne = true;
 				}
 	
 				else if(this.x < playerOne.x + this.w && this.y > playerOne.y - 50 ){
-					this.speedX = 5;
-					this.speedY = 5;
+					this.speedX = -this.speedX;
+					this.speedY = -this.speedY;
 					touchedOne = true;
 				}
 
