@@ -50,7 +50,7 @@ function reset(){
 		this.y = y;
 		this.w = w;
 		this.h = h;
-		this.speedX = -5;
+		this.speedX = Math.random()*-5;
 		this.speedY = 0;
 		var touchedOne = false;
 		this.show = function(){
